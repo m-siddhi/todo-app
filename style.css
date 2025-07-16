@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background: #f3f4f6;
+    color: #333;
+}
+.sidebar {
+    width: 220px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 24px 16px;
+    overflow-y: auto;
+}
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.lists {
+    list-style: none;
+}
+.lists li {
+    padding: 8px 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+.lists li.active {
+    background: #e4ecff;
+    color: #0366d6;
+    font-weight: 600;
+}
+.lists li:hover {
+    background: #f0f2f8;
+}
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.banner {
+    padding: 24px;
+    color: #fff;
+    background: linear-gradient(135deg, #4a90e2, #8e44ad);
+}
+.banner h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+.tasks {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+    background: #fff;
+}
+.task {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+.task-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.task.completed .text {
+    text-decoration: line-through;
+    color: gray;
+}
+.category {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+.add-row {
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    flex-wrap: wrap;
+}
+.add-row input,
+.add-row select {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.add-row input[type="date"] {
+    font-size: 15px;
+}
+.add-row button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+.add-row button:hover {
+    opacity: 0.9;
+}

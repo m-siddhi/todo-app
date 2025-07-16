@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>Hey, Welcome!</h2>
+      <ul id="sidebar" class="lists"></ul>
+    </aside>
+
+    <!-- MAIN PANEL -->
+    <section class="main">
+      <div class="banner">
+        <h1 id="viewTitle">To-Do</h1>
+      </div>
+
+      <div id="taskContainer" class="tasks"></div>
+
+      <div class="add-row">
+        <input type="text" id="taskInput" placeholder="Add a to-do…" />
+        <select id="categorySelect">
+          <option value="Groceries">Groceries</option>
+          <option value="Work">Work</option>
+          <option value="Movies to Watch">Movies to Watch</option>
+          <option value="Family">Family</option>
+          <option value="Travel">Travel</option>
+        </select>
+        <input type="date" id="dueDateInput" />
+        <button id="addBtn">Add</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
